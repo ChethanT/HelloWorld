@@ -12,16 +12,16 @@ $baseFolder = (Get-Item (Join-Path $PSScriptRoot "..")).FullName
 . (Join-Path $PSScriptRoot "Install-BcContainerHelper.ps1") -bcContainerHelperVersion $bcContainerHelperVersion -genericImageName $genericImageName
 if ($containerNameParam) { $containerName = $containerNameParam }
 
-if (("$vaultNameForLocal" -eq "") -or !(Get-AzKeyVault -VaultName $vaultNameForLocal)) {
-    throw "You need to setup a Key Vault for use with local pipelines"
-}
-Get-AzKeyVaultSecret -VaultName $vaultNameForLocal | ForEach-Object {
-    Write-Host "Get Secret $($_.Name)Secret"
-    Set-Variable -Name "$($_.Name)Secret" -Value (Get-AzKeyVaultSecret -VaultName $vaultNameForLocal -Name $_.Name -WarningAction SilentlyContinue)
-}
-$licenseFile = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($licenseFileSecret.SecretValue))
-$insiderSasToken = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($insiderSasTokenSecret.SecretValue))
-$credential = New-Object pscredential 'admin', $passwordSecret.SecretValue
+#if (("$vaultNameForLocal" -eq "") -or !(Get-AzKeyVault -VaultName $vaultNameForLocal)) {
+#    throw "You need to setup a Key Vault for use with local pipelines"
+#}
+#Get-AzKeyVaultSecret -VaultName $vaultNameForLocal | ForEach-Object {
+#    Write-Host "Get Secret $($_.Name)Secret"
+#    Set-Variable -Name "$($_.Name)Secret" -Value (Get-AzKeyVaultSecret -VaultName $vaultNameForLocal -Name $_.Name -WarningAction SilentlyContinue)
+#}
+#$licenseFile = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($licenseFileSecret.SecretValue))
+$insiderSasToken = '' #[System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($insiderSasTokenSecret.SecretValue))
+$credential = New-Object pscredential 'admin', (ConvertTo-SecureString -String 'P@ssword123' -AsPlainText -Force) #$passwordSecret.SecretValue
 
 $allTestResults = "testresults*.xml"
 $testResultsFile = Join-Path $baseFolder "TestResults.xml"

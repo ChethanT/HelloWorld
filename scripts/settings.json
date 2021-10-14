@@ -9,7 +9,7 @@
     "installTestRunner": true,
     "installTestFramework": false,
     "installTestLibraries": false,
-    "installPerformanceToolkit": false,
+    "installPerformanceToolkit": true,
     "doNotSignApps": true,
     "enableCodeCop": false,
     "enableAppSourceCop": false,
