@@ -1,7 +1,7 @@
 {
-    "id":  "00000000-0000-0000-0000-000000000002",
-    "name":  "Default Test App Name",
-    "publisher":  "Default Publisher",
+    "id":  "7e0be464-2406-41d6-812b-0379437cf2b1",
+    "name":  "Hello World Test",
+    "publisher":  "Contoso",
     "brief":  "",
     "description":  "",
     "version":  "2.0.0.0",
@@ -18,9 +18,9 @@
                              "version":  "17.0.0.0"
                          },
                          {
-                            "id":  "00000000-0000-0000-0000-000000000001",
-                            "publisher":  "Default Publisher",
-                            "name":  "Default App Name",
+                            "id":  "50c6e4a2-8fe7-4686-88ce-ed4536218e50",
+                            "publisher":  "Contoso",
+                            "name":  "Hello World",
                             "version":  "2.0.0.0"
                          }
                      ],
@@ -31,8 +31,8 @@
     "platform":  "17.0.0.0",
     "idRanges":  [
                      {
-                         "from":  50100,
-                         "to":  50149
+                         "from":  67370,
+                         "to":  67379
                      }
                  ],
     "runtime":  "6.0",

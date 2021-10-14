@@ -1,7 +1,7 @@
 {
-    "id":  "00000000-0000-0000-0000-000000000001",
-    "name":  "Default App Name",
-    "publisher":  "Default Publisher",
+    "id":  "50c6e4a2-8fe7-4686-88ce-ed4536218e50",
+    "name":  "Hello World",
+    "publisher":  "Contoso",
     "brief":  "",
     "description":  "",
     "version":  "2.0.0.0",
@@ -12,9 +12,9 @@
     "logo":  "",
     "dependencies":  [
                          {
-                             "id":  "00000000-0000-0000-0000-000000000003",
-                             "publisher":  "Default Publisher",
-                             "name":  "Default Base App Name",
+                             "id":  "05ee1ec1-3052-4131-8f0b-274a4d8fa803",
+                             "publisher":  "Contoso",
+                             "name":  "Hello World Base",
                              "version":  "2.0.0.0"
                          }
                      ],
@@ -25,8 +25,8 @@
     "platform":  "17.0.0.0",
     "idRanges":  [
                      {
-                         "from":  50100,
-                         "to":  50149
+                         "from":  67360,
+                         "to":  67369
                      }
                  ],
     "showMyCode":  true,

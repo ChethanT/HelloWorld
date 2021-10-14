@@ -1,7 +1,7 @@
 {
-    "id":  "00000000-0000-0000-0000-000000000003",
-    "name":  "Default Base App Name",
-    "publisher":  "Default Publisher",
+    "id":  "05ee1ec1-3052-4131-8f0b-274a4d8fa803",
+    "name":  "Hello World Base",
+    "publisher":  "Contoso",
     "brief":  "",
     "description":  "",
     "version":  "2.0.0.0",
@@ -20,8 +20,8 @@
     "platform":  "17.0.0.0",
     "idRanges":  [
                      {
-                         "from":  50100,
-                         "to":  50149
+                         "from":  67350,
+                         "to":  67359
                      }
                  ],
     "showMyCode":  true,
