@@ -1,4 +1,4 @@
-codeunit 67383 "BCPT Open Sales Invoice List"
+codeunit 67383 "Open Sales Invoice List"
 {
     // Test codeunits can only run in foreground (UI)
     Subtype = Test;

@@ -35,11 +35,7 @@
                          "to":  67389
                      }
                  ],
-    "contextSensitiveHelpUrl":  "https://docs.microsoft.com/dynamics365/business-central/",
-    "resourceExposurePolicy": {
-        "allowDebugging": true,
-        "allowDownloadingSource": true,
-        "includeSourceInSymbolFile": true
-    },
+    "runtime":  "6.0",
+    "showMyCode":  true,
     "target":  "Cloud"
 }

@@ -1,4 +1,4 @@
-codeunit 67381 "BCPT Open Item List"
+codeunit 67381 "Open Item List"
 {
     // Test codeunits can only run in foreground (UI)
     Subtype = Test;

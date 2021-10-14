@@ -1,4 +1,4 @@
-codeunit 67384 "BCPT Open Vendor List"
+codeunit 67384 "Open Vendor List"
 {
     // Test codeunits can only run in foreground (UI)
     Subtype = Test;
