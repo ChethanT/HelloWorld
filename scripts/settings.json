@@ -9,7 +9,7 @@
     "bcptTestFolders": "bcpttest",
     "installTestRunner": true,
     "installTestFramework": true,
-    "installTestLibraries": false,
+    "installTestLibraries": true,
     "installPerformanceToolkit": true,
     "doNotSignApps": true,
     "enableCodeCop": false,
