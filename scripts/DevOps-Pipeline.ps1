@@ -90,6 +90,7 @@ Run-AlPipeline @params `
     -previousApps $previousApps `
     -appFolders $appFolders `
     -testFolders $testFolders `
+    -bcptTestFolders $bcptTestFolders `
     -doNotRunTests:$doNotRunTests `
     -testResultsFile $testResultsFile `
     -testResultsFormat 'JUnit' `
