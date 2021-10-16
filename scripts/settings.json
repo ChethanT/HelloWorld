@@ -23,7 +23,7 @@
         {
             "version": "ci",
             "artifact": "//18.0.23013.24016/us",
-            "cacheImage": false,
+            "cacheImage": true,
             "CreateRuntimePackages": false
         }
     ]
