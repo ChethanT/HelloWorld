@@ -5,7 +5,7 @@
     "installTestApps": "",
     "previousApps": "",
     "appFolders": "app,base",
-    "testFolders": "test",
+    "testFolders": "",
     "bcptTestFolders": "bcpttest",
     "installTestRunner": true,
     "installTestFramework": true,
