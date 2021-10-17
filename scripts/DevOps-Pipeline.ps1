@@ -111,7 +111,7 @@ Run-AlPipeline @params `
     -additionalCountries $additionalCountries `
     -buildArtifactFolder $buildArtifactFolder `
     -CreateRuntimePackages:$CreateRuntimePackages `
-    -appBuild $appBuild -appRevision $appRevision
+    -appBuild $appBuild -appRevision $appRevision -keepContainer
 
 if ($environment -eq 'AzureDevOps') {
     Write-Host "##vso[task.setvariable variable=TestResults]$allTestResults"
