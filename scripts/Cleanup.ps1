@@ -17,6 +17,10 @@ if ($refreshToken -and $environmentName) {
     }
 }
 
+Invoke-ScriptInBcContainer -containerName $containerName -scriptblock {
+    Get-EventLog -LogName Application -Newest 10 -EntryType Error | Format-List
+}
+
 if ("$AgentName" -ne "Hosted Agent" -and "$AgentName" -notlike "Azure Pipelines*") {
     $cleanupMutexName = "Cleanup"
     $cleanupMutex = New-Object System.Threading.Mutex($false, $cleanupMutexName)
