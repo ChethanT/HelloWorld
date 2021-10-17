@@ -22,7 +22,7 @@
     "versions": [
         {
             "version": "ci",
-            "artifact": "/onprem/18.0.23013.24016/us",
+            "artifact": "/onprem/19.0.29894.30693/us",
             "cacheImage": true,
             "CreateRuntimePackages": false
         }
