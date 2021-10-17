@@ -1,6 +1,6 @@
 {
     "name": "HelloWorld",
-    "memoryLimit": "6G",
+    "memoryLimit": "8G",
     "installApps": "",
     "installTestApps": "",
     "previousApps": "",
@@ -22,7 +22,7 @@
     "versions": [
         {
             "version": "ci",
-            "artifact": "//18.0.23013.24016/us",
+            "artifact": "/onprem/18.0.23013.24016/us",
             "cacheImage": true,
             "CreateRuntimePackages": false
         }
