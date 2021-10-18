@@ -73,7 +73,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: BCPTTestResults
-          path: output/bcptTestresults*.json
+          path: output/bcpttestresults*.json
           if-no-files-found: ignore
 
       - name: Publish Artifacts - Manifest
