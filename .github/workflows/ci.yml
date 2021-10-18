@@ -69,6 +69,13 @@ jobs:
           path: output/testresults*.xml
           if-no-files-found: ignore
 
+      - name: Publish Artifacts - BCPT Test Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: BCPTTestResults
+          path: output/bcptTestresults*.json
+          if-no-files-found: ignore
+
       - name: Publish Artifacts - Manifest
         uses: actions/upload-artifact@v2
         with:
