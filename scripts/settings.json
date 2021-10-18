@@ -12,7 +12,7 @@
     "installTestLibraries": true,
     "installPerformanceToolkit": true,
     "doNotSignApps": true,
-    "doNotRunTests": true,
+    "doNotRunTests": false,
     "enableCodeCop": false,
     "enableAppSourceCop": false,
     "enablePerTenantExtensionCop": true,
